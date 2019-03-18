@@ -51,6 +51,7 @@ def getRM(MS=None,
 
       (timerange,timestep,pointing,stat_names,stat_pos)=PosTools.getMSinfo(MS);
     
+    use_proxy = False
     for key in kwargs.keys():
         if key=='use_mean':
             use_mean = kwargs[key]
